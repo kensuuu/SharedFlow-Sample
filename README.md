@@ -2,3 +2,9 @@
 
 This repository contains a sample application demonstrating the use of Jetpack Compose with StateFlow for state management and SharedFlow for UI events.
 The application is a simple GitHub repository search app.
+
+## Screenshots
+
+| Home                               | WebView                               |
+|------------------------------------|---------------------------------------|
+| <img src="./screenshot/home.png" > | <img src="./screenshot/webview.png" > |
