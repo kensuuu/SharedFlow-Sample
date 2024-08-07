@@ -87,8 +87,8 @@ fun HomeScreen(
         }
     ) { paddingValues ->
         HomeContent(
+            modifier = Modifier.padding(paddingValues),
             uiState = uiState,
-            paddingValues = paddingValues,
             onEvent = viewModel::onEvent
         )
     }
@@ -96,14 +96,13 @@ fun HomeScreen(
 
 @Composable
 private fun HomeContent(
+    modifier: Modifier,
     uiState: HomeUiState,
-    paddingValues: PaddingValues,
     onEvent: (HomeUiEvent) -> Unit,
 ) {
     Column(
-        modifier = Modifier
+        modifier = modifier
             .fillMaxSize()
-            .padding(paddingValues)
             .padding(horizontal = 16.dp),
         verticalArrangement = Arrangement.spacedBy(16.dp),
     ) {
